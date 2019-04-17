@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  width: 50vw;
+}
+.links{
+text-decoration: none;
+color: white;
+}
+.allCompanies, .search, .add {
+  font-size: 1.2rem;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor:pointer;
+}
+
+.allCompanies::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: url(../../assets/images/list.svg) no-repeat;
+  background-size: contain;
+}
+
+.search::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(../../assets/images/search.svg) no-repeat;
+    background-size: contain;
+}
+
+.add::before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url(../../assets/images/add.svg) no-repeat;
+    background-size: contain;
+}

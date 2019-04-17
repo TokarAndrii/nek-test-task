@@ -1,0 +1,122 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  width: 50vw;
+  font-size: 1.2rem;
+}
+.form {
+  height: 600px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border: 3px solid blue;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.form::before {
+  content: "";
+  display: inline-block;
+  width: 350px;
+  height: 224px;
+  background: url(../../assets/images/LOGOUKRENERGO.jpg) no-repeat;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+}
+
+.label {
+  display: inline-block;
+  width: 300px;
+  height: 32px;
+  margin: 0;
+  padding: 4px;
+}
+
+.input {
+  display: inline-block;
+  width: 294px;
+  height: 36px;
+  margin: 0;
+  padding: 8px;
+}
+
+.submitBtn {
+  font-weight: 700;
+  display: inline-block;
+  width: 314px;
+  height: 44px;
+  margin: 0;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  letter-spacing: 0.0525rem;
+}
+
+.successMessage {
+  background-color: white;
+  color: black;
+  height: 80px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blue;
+  border-radius: 5px;
+}
+
+.errorMessage {
+  border: 3px solid red;
+  background-color: white;
+  color: black;
+  height: 80px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 64.0625em) {
+  .form,
+  .errorMessage,
+  .successMessage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 46.875em) {
+  .form,
+  .errorMessage,
+  .successMessage {
+    width: 85vw;
+  }
+  .form::before {
+    content: "";
+    display: inline-block;
+    width: 250px;
+    height: 160px;
+    background: url(../../assets/images/LOGOUKRENERGO-small.jpg) no-repeat;
+  }
+}
+@media screen and (max-width: 26.25em) {
+  .input {
+    max-width: 83%;
+  }
+
+  .submitBtn {
+    max-width: 90%;
+  }
+}
