@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import authUserOperations from "../../redux/authOperations";
 import HomePage from "../../pages/home/HomePage";
 import LogInPage from "../../pages/log-in/LogInPage";
+import AllCompanies from "../../pages/all-companies/AllCompanies";
 import routes from "../../config/routes";
 import selectors from "../../redux/selectors";
 import styles from "./App.module.css";
@@ -64,6 +65,7 @@ class App extends Component {
           <Switch>
             <Route exact path={routes.MAIN} component={HomePage} />
             <Route path={routes.LOG_IN} component={LogInPage} />
+            <Route path={routes.COMPANIES} component={AllCompanies} />
           </Switch>
         </main>
         <header className="App-header" />

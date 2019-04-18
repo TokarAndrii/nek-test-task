@@ -1,0 +1,165 @@
+.wrapper {
+  color: white;
+}
+
+.table {
+  width: 60vw;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 16px 64px;
+  text-align: left;
+}
+.inputsHolder {
+  width: 60vw;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.inputsHolderBottom {
+  background-color: lightgrey;
+  width: 60vw;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.label {
+  flex: 1 1 auto;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 64px;
+  font-size: 1.2rem;
+}
+
+.input {
+  margin: 0 8px;
+  padding: 6px;
+}
+
+.th {
+  font-weight: bold;
+  color: black;
+  background-color: lightgrey;
+  border-bottom: 2px solid black;
+  padding: 6px;
+}
+
+.td {
+  color: blue;
+  padding: 6px;
+}
+
+.tr:nth-child(odd) {
+  background-color: white;
+}
+.tr:hover {
+  background-color: grey;
+}
+
+tr:last-child > td {
+  border-bottom: 2px solid black;
+}
+
+.inputsHolderBottomPagination {
+  flex: 1 1 50%;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 64px;
+  font-size: 1.2rem;
+}
+
+.paginationItem {
+  padding: 4px 10px;
+  margin-right: 12px;
+}
+
+.prevPaginationText {
+  margin-right: 12px;
+}
+
+.paginationItem:hover {
+  outline: 1px solid black;
+  background-color: grey;
+  color: black;
+}
+
+.paginationItemActive {
+  padding: 4px 10px;
+  border: 1px solid black;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 86.25em) {
+  .table {
+    width: 90vw;
+  }
+
+  .inputsHolder {
+    width: 90vw;
+  }
+
+  .inputsHolderBottom {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 61.25em) {
+  .inputsHolder {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .inputsHolderBottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 28.75em) {
+  .wrapper {
+    width: 100vw;
+  }
+
+  .table {
+    width: 100vw;
+    padding: 16px 8px;
+  }
+
+  .inputsHolder {
+    width: 100vw;
+  }
+
+  .inputsHolderBottom {
+    width: 100vw;
+  }
+
+  .inputsHolderBottomPagination {
+    flex: 0 1 50%;
+    padding: 8px 0px;
+    font-size: 1rem;
+  }
+
+  .inputsHolder {
+    padding: 16px 0;
+    font-size: 1rem;
+  }
+
+  .label {
+    flex: 0 1 auto;
+    font-size: 1rem;
+    padding: 8px 0px;
+  }
+}

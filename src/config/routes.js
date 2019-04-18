@@ -1,5 +1,5 @@
 const MAIN = "/";
-const COMPANIES = "/companies";
+const COMPANIES = "/all-companies";
 const SEARCH = "/search";
 const ADD_COMPANY = "/add-company";
 const LOG_OUT = "/log-out";
