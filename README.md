@@ -58,4 +58,4 @@ Routes:
 
 - all companies table
 
-ALso if you press lo
+ALso if you press log-ot button it will log-ot user from system and will appear log-in button
